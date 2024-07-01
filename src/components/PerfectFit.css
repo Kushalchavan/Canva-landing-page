@@ -1,0 +1,78 @@
+:root {
+  --border-color: #d7d7dc;
+}
+
+section {
+  padding-top: 4rem;
+  width: 100%;
+}
+
+.heading h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.card {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.card .main-card {
+  width: 18rem;
+  height: 14rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.main-card p {
+  font-size: 0.9rem;
+  color: #919295;
+}
+
+.text {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.text span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #8b3dff;
+}
+
+@media (max-width: 1280px) {
+  .card .main-card {
+    flex: 1 1 calc(50% - 2rem);
+    margin: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .card .main-card {
+    flex: 1 1 100%;
+    margin: 1rem 0;
+  }
+}

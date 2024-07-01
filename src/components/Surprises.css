@@ -1,0 +1,96 @@
+:root {
+  --bg-color: #0d1216;
+  --heading-color: #8b3dff;
+}
+
+.section-second {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.section-second h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.section-second .para-center {
+  text-align: center;
+  color: gray;
+  margin-top: 1.5rem;
+}
+
+.second {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.second img {
+  width: 19rem;
+  height: 14rem;
+  border-radius: 15px;
+  transition: transform 0.2s ease-in;
+}
+
+.second h4 {
+  font-size: 0.8rem;
+}
+
+.second p {
+  font-size: 0.7rem;
+  color: gray;
+}
+
+.get-started {
+  margin-top: 2rem;
+  height: 22rem;
+  max-width: 100%;
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.get-started h1 span {
+  color: var(--heading-color);
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.buttons .button-2 {
+  padding: 0.7rem 1rem;
+  color: #fff;
+  border-radius: 7px;
+  outline: none;
+  font-weight: bold;
+  border: 1px solid #dfdfdf;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .get-started {
+    height: 30rem;
+  }
+}

@@ -1,0 +1,87 @@
+:root {
+  --footer-bg-color: #ffffff;
+  --hover-color: #8b3dff;
+}
+
+footer {
+  padding: 0 4rem;
+  width: 100%;
+  background: var(--footer-bg-color);
+}
+
+.upper-footer {
+  margin-top: 3rem;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.upper-footer h4 {
+  margin: 1rem 1rem;
+}
+
+.upper-footer ul li {
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  cursor: pointer;
+}
+
+.upper-footer ul li:hover {
+  color: var(--hover-color);
+}
+
+.underline {
+  margin: 2rem 2rem;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.bottom-footer {
+margin: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.middle-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: .9rem;
+}
+
+.left-side-footer {
+    display: flex;
+    gap: 1rem;
+    color: gray;
+}
+
+.bottom-footer button {
+  padding: 0.7rem 1rem;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #dfdfdf;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+    .bottom-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+  .upper-footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .upper-footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
